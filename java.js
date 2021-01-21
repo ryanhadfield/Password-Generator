@@ -35,7 +35,7 @@ var copyEl = document.getElementById("copy");
 var lengthEl = document.getElementById("length");
 var specialEl = document.getElementById("special");
 var numEl = document.getElementById("numbers");
-var upEl = document.getElementById("uppercase");
+var upEl = document.getElementByI                                         d("uppercase");
 var lowEl = document.getElementById("lowercase");
 var generateEl = document.getElementById("generate");
 
@@ -83,4 +83,21 @@ function createPassword(special, number, uppercase, lowercase, length) {
   var password = newPassword;
   return password;
 }
+
+
+// Button event that copies the generated password
+
+copyEl.addEventListener('click', function() {
+	const textarea = document.createElement('textarea');
+	const password = passwordEl.innerText;
+	
+	if(!password) { return; }
+	
+	textarea.value = password;
+	document.body.appendChild(textarea);
+	textarea.select();
+	document.execCommand('copy');
+	textarea.remove();
+	alert('Copied to Clipboard');
+});
 
