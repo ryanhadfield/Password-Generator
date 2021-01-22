@@ -35,7 +35,7 @@ var copyEl = document.getElementById("copy");
 var lengthEl = document.getElementById("length");
 var specialEl = document.getElementById("special");
 var numEl = document.getElementById("numbers");
-var upEl = document.getElementByI                                         d("uppercase");
+var upEl = document.getElementById("uppercase");
 var lowEl = document.getElementById("lowercase");
 var generateEl = document.getElementById("generate");
 
