@@ -2,6 +2,10 @@
 
 The goal was to create a website that contains javascript and allows user to generate a random password based on a set of criteria. 
 
+
+## Link to Site
+Link: [Password Generator](https://ryanhadfield.github.io/Password-Generator/)
+
 ## Objectives
 
 - User can create a randomized password based on the selected criteria.
